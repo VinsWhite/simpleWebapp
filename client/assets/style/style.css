@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+
+
+/* General */
+
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+#app {
+    width: 50%;
+    margin: auto;
+    color: white;
+    background-color: #2e6773;
+    padding: 2em;
+    border-radius: 1em;
+    position: relative;
+    box-shadow: 0.3em 0.3em 0.3em 0.3em rgb(153, 153, 153);
+}
+
+@media (max-width: 1200px) {
+    #app {
+        width: 75%;
+    }
+}
+
+/* HEADER */
+h1 {
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em rgb(137, 97, 103);
+}
+
+/* MAIN */  
+main {
+    text-align: center;
+}
+
+main button {
+    text-transform: uppercase;
+    background-color: #377987;
+    color: white;
+    border: 0.1em solid white;
+    border-radius: 1em;
+    padding: 0.5em;
+    box-shadow: 0.1em 0.2em black;
+    cursor: pointer;
+}
+
+main img {
+    width: 5em;
+    border-radius: 1em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+/* - Calculation */
+.calculation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .calculation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.random {
+    background-color: white;
+    color: black;
+    width: 5em;
+    padding: 0 0.2em;
+}
+
+.result {
+    background-color: #438f9e;
+    width: 5em;
+    padding: 0 0.2em;
+    box-shadow: 0.1em 0.1em black;
+}
+
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgb(136, 136, 169);
+    text-align: center;
+    margin-top: 2em;
+}

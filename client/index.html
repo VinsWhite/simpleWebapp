@@ -8,7 +8,32 @@
     <title>Simple Webapp</title>
 </head>
 <body>
-    
+    <!-- this is the container of the entire app -->
+    <div id="app">
+        <header> <!-- app header -->
+            <h1>
+                Choose two numbers to sum!
+            </h1>
+        </header>
+
+        <main> <!-- app main content --> 
+            <img src="./assets/img/icon.jpg" alt="calculation icon">
+            <div class="calculation"> <!-- using a flex box model -->
+                <input type="number">
+                <p>+</p>
+                <input type="number">
+                <p>+</p>
+                <p class="random">random</p>
+                <p>=</p>
+                <p class="result">result</p>
+            </div>
+            <button>calculate</button> <!-- On click, this button submits the form data to the server -->
+        </main>
+
+        <footer> <!-- app footer -->
+            <p>&copy; Vincenzo Saccone</p>
+        </footer>
+    </div>
     <script src="./assets/script/script.js"></script> <!-- the user can view the content while the script is loading -->
 </body>
 </html>
