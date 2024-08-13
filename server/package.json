@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Vincenzo Saccone",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
