@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/styles.css">
     <link rel="icon" href="./assets/img/icon.jpg" type="image/jpeg"> <!-- favicon webapp -->
     <title>Simple Webapp</title>
 </head>
@@ -12,22 +12,21 @@
     <div id="app">
         <header> <!-- app header -->
             <h1>
-                Choose two numbers to sum!
+                Choose two numbers to add!
             </h1>
         </header>
 
         <main> <!-- app main content --> 
             <img src="./assets/img/icon.jpg" alt="calculation icon">
             <div class="calculation"> <!-- using a flex box model -->
-                <input type="number">
+                <input type="number" id="num1" placeholder="Enter the first number">
                 <p>+</p>
-                <input type="number">
-                <p>+</p>
-                <p class="random">random</p>
+                <input type="number" id="num2" placeholder="Enter the second number">
                 <p>=</p>
-                <p class="result">result</p>
+                <p class="result">.</p>
             </div>
-            <button>calculate</button> <!-- On click, this button submits the form data to the server -->
+            <button id="calculateButton">calculate</button> <!-- On click, this button submits the form data to the server -->
+            <h4><span>Operations:</span> calculate the sum of the two input numbers, and then add the smallest prime number greater than the larger of the two numbers to this sum.</h4>
         </main>
 
         <footer> <!-- app footer -->
